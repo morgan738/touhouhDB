@@ -36,6 +36,7 @@ async function seed() {
   ])
 
   console.log(`seeded ${users.length} users`)
+  console.log(`seeded ${character.length} users`)
   console.log(`seeded successfully`)
 }
 
