@@ -19,3 +19,10 @@ form div {
   margin: 1em;
   display: inline-block;
 }
+
+.allCharDiv div {
+  background: blue;
+  border-radius: 30px;
+  width: 150px;
+  height: 150px;
+}
