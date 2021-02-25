@@ -6,7 +6,10 @@ import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    <h1>Touhou DB</h1>
+    <Link to="/">
+      <h1>Touhou DB</h1>
+    </Link>
+    <Link to="/characters">Characters</Link>
     <nav>
       {isLoggedIn ? (
         <div>

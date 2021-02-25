@@ -13,7 +13,7 @@ export class Characters extends React.Component {
 
     return (
       <div>
-        <h1> Characters</h1>
+        <h1 className="characterText"> Characters</h1>
 
         <div>
           {characters.map(chars => (

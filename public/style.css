@@ -1,5 +1,15 @@
-body {
+body,
+html {
   font-family: sans-serif;
+  background-image: url('Hakurei.Shrine.full.1222564.jpg');
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
@@ -18,6 +28,22 @@ nav a {
 form div {
   margin: 1em;
   display: inline-block;
+}
+
+.welcome {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
+}
+
+.characterText {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  text-align: center;
 }
 
 .allCharDiv div {
