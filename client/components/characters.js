@@ -1,7 +1,8 @@
+import {motion} from 'framer-motion'
 import React from 'react'
 import {connect} from 'react-redux'
 import {getAllChars} from '../store/character'
-import {Example} from './motion'
+import {Motion} from './motion'
 
 export class Characters extends React.Component {
   componentDidMount() {
@@ -17,11 +18,12 @@ export class Characters extends React.Component {
 
         <div>
           {characters.map(chars => (
-            <div className="allCharDiv" key={chars.id}>
+            <div key={chars.id}>
+              {/* <Example className="allCharDiv" key={chars.id} /> */}
               <h2> {chars.name}</h2>
-              <img src={chars.imageURL} />
-              <h3>{chars.description}</h3>
-              <Example className="allCharDiv" key={chars.id} />
+              <Motion i={chars} key={chars.id} />
+              {/* <img src={chars.imageURL} className='allCharImg' /> */}
+              {/* <h3>{chars.description}</h3> */}
             </div>
           ))}
         </div>

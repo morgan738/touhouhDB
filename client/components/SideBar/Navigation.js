@@ -1,6 +1,7 @@
 import * as React from 'react'
 import {motion} from 'framer-motion'
 import {MenuItem} from './MenuItem'
+import {Link} from 'react-router-dom'
 
 const variants = {
   open: {
@@ -10,6 +11,7 @@ const variants = {
     transition: {staggerChildren: 0.05, staggerDirection: -1}
   }
 }
+
 const itemIds = [0, 1, 2, 3, 4]
 
 export const Navigation = () => (

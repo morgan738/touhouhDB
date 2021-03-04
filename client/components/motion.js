@@ -1,21 +1,19 @@
 import * as React from 'react'
 import {motion} from 'framer-motion'
 
-export const Example = () => {
+const colors = ['#FF008C', '#D309E1', '#9C1AFF', '#7700FF', '#4400FF']
+
+export const Motion = ({i}) => {
+  //const style = { border: `2px solid ${colors[i]}` }
   return (
-    <motion.div
-      animate={{
-        scale: [1, 2, 2, 1, 1],
-        rotate: [0, 0, 270, 270, 0],
-        borderRadius: ['20%', '20%', '50%', '50%', '20%']
-      }}
-      transition={{
-        duration: 2,
-        ease: 'easeInOut',
-        times: [0, 0.2, 0.5, 0.8, 1],
-        loop: Infinity,
-        repeatDelay: 1
-      }}
-    />
+    <motion.li whileHover={{scale: 1.1}} whileTap={{scale: 0.95}}>
+      {/* <div className="icon-placeholder" style={style} /> */}
+
+      {/* <div className="text-placeholder" style={style} /> */}
+
+      {/* <div className="allCharDiv" /> */}
+
+      <img src={i.imageURL} className="allCharImg" />
+    </motion.li>
   )
 }

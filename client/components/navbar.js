@@ -7,10 +7,12 @@ import {SideBar} from './SideBar/sidebar'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    <Link to="/">
-      <h1 className="title">Touhou DB</h1>
-    </Link>
-    <Link to="/characters">Characters</Link>
+    <h1 className="title">
+      <Link to="/">Touhou DB</Link>
+    </h1>
+    <h1 className="title">
+      <Link to="/characters">Characters</Link>
+    </h1>
     <SideBar />
 
     <nav>

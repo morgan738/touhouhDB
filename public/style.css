@@ -130,9 +130,14 @@ li {
   text-align: right;
 }
 
-.allCharDiv div {
+.allCharDiv {
   background: blue;
   border-radius: 30px;
   width: 150px;
   height: 150px;
+}
+
+.allCharImg {
+  width: 200px;
+  height: 200px;
 }
