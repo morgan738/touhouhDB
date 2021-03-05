@@ -117,7 +117,7 @@ li {
 .title {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   padding: 10px;
   text-align: center;
 }
@@ -125,9 +125,16 @@ li {
 .rightAli {
   margin: auto;
   width: 90%;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   padding: 10px;
   text-align: right;
+}
+
+.centerText {
+  margin: auto;
+  width: 20%;
+  text-align: center;
+  padding: 10px;
 }
 
 .allCharDiv {
@@ -140,4 +147,7 @@ li {
 .allCharImg {
   width: 200px;
   height: 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }

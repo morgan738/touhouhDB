@@ -18,9 +18,9 @@ export class Characters extends React.Component {
 
         <div>
           {characters.map(chars => (
-            <div key={chars.id}>
+            <div className="title" key={chars.id}>
               {/* <Example className="allCharDiv" key={chars.id} /> */}
-              <h2> {chars.name}</h2>
+              <h2 className="centerText"> {chars.name}</h2>
               <Motion i={chars} key={chars.id} />
               {/* <img src={chars.imageURL} className='allCharImg' /> */}
               {/* <h3>{chars.description}</h3> */}
