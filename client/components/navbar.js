@@ -3,10 +3,18 @@ import PropTypes from 'prop-types'
 import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 import {logout} from '../store'
+import {SideBar} from './SideBar/sidebar'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    <h1>Touhou DB</h1>
+    <h1 className="title">
+      <Link to="/">Touhou DB</Link>
+    </h1>
+    <h1 className="title">
+      <Link to="/characters">Characters</Link>
+    </h1>
+    <SideBar />
+
     <nav>
       {isLoggedIn ? (
         <div>
@@ -17,10 +25,10 @@ const Navbar = ({handleClick, isLoggedIn}) => (
           </a>
         </div>
       ) : (
-        <div>
+        <div className="rightAli">
           {/* The navbar will show these links before you log in */}
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
+          <Link to="/login"> Login </Link>
+          <Link to="/signup"> Sign Up </Link>
         </div>
       )}
     </nav>
